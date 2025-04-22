@@ -1,6 +1,6 @@
 # 🛒 eCommerce User Service
 
-This is a modular .NET 8-based backend microservice for managing user authentication and registration in an eCommerce platform.  
+This is a modular .NET 9-based backend microservice for managing user authentication and registration in an eCommerce platform.  
 The project follows **Clean Architecture** principles and uses:
 
 - ✅ CQRS with MediatR  
@@ -14,7 +14,7 @@ The project follows **Clean Architecture** principles and uses:
 
 ## 🚀 Technologies Used
 
-- [.NET 8](https://dotnet.microsoft.com/)
+- [.NET 9](https://dotnet.microsoft.com/)
 - [MediatR](https://github.com/jbogard/MediatR)
 - [FluentValidation](https://docs.fluentvalidation.net/)
 - [Dapper](https://github.com/DapperLib/Dapper)
