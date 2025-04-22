@@ -25,12 +25,31 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssemblyContaining<Program>();
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 app.UseExceptionHandler();
 
 app.UseRouting();
+
+app.UseSwagger();
+
+app.UseSwaggerUI();
+
+app.UseCors();
 
 app.UseAuthentication();
 
