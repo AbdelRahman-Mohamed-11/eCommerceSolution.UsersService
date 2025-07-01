@@ -1,22 +1,15 @@
 # 🛒 eCommerce User Service
 
-This is a modular .NET 9-based backend microservice for managing user authentication and registration in an eCommerce platform.  
-The project follows **Clean Architecture** principles and uses:
+A clean, modular, and scalable .NET 9-based microservice for user management in an eCommerce platform.
 
-- ✅ CQRS with MediatR  
-- ✅ FluentValidation for input validation  
-- ✅ Dapper for data access  
-- ✅ BCrypt for secure password hashing  
-- ✅ Unified error response format using `UnifiedProblemDetails`  
-- ✅ Docker support for containerization
+## ✅ Highlights
 
----
-
-## 🚀 Technologies Used
-
-- [.NET 9](https://dotnet.microsoft.com/)
-- [MediatR](https://github.com/jbogard/MediatR)
-- [FluentValidation](https://docs.fluentvalidation.net/)
-- [Dapper](https://github.com/DapperLib/Dapper)
-- [BCrypt.Net](https://github.com/BcryptNet/bcrypt.net)
-- [Docker](https://www.docker.com/)
+- Clean Architecture with **CQRS + MediatR**
+- Secure **BCrypt password hashing**
+- **Dapper** for performant SQL data access
+- **Postgress** for database
+- **Repository Pattern** for execting against the database
+- Consistent API responses using **ProblemDetails** and **Result<T>**
+- Centralized error handling via a custom **GlobalExceptionHandler**
+- Swagger/OpenAPI documentation out-of-the-box
+- CORS support for Angular (localhost:4200)
